@@ -1,0 +1,29 @@
+.main-card {
+  width: 100%;
+  border: 3px solid $black;
+  // margin: 0 20px;
+  margin-bottom: 40px;
+
+  &__header {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 3px solid $black;
+    
+  }
+
+  &__title {
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Mansalva', sans-serif;
+  }
+
+  &__body {
+    padding: 20px;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin: 0;
+  }
+}

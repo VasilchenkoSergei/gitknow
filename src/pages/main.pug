@@ -1,0 +1,26 @@
+extends ../template/layout
+
+block vars
+	- var bodyClass = 'page'
+	- var footerClass = ''
+	- var headerClass = ''
+	- var pageTitle = 'Main'
+	- var dir = ''
+	- var layout = ''
+	- var isFixedHeader = true
+	- var isMain = true
+
+block links
+	meta(property='og:title' content='Git Know - chewed git')
+	meta(property='og:url' content='')
+	meta(property='og:description' content='Git know - чрезвычайная помощь')
+	link(rel="canonical" href="")
+
+block content
+
+	.wrapper
+		include ../blocks/header/header.pug
+		include ../blocks/cards-list/cards-list.pug
+
+
+block scripts

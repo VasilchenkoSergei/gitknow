@@ -1,0 +1,14 @@
+body {
+  background-color: $main-bg;
+  font-family: $font-family;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+.wrapper {
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}

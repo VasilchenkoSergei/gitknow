@@ -1,0 +1,11 @@
+mixin main-card(title, text, list = false, pre = false)
+  .main-card
+    .main-card__header
+      p.main-card__title #{title}
+    .main-card__body
+      if list == true
+        block
+      else if pre == true
+        block
+      else
+        p.main-card__text #{text}

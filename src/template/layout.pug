@@ -1,0 +1,30 @@
+block vars
+	- var bodyClass = ''
+	- var pageTitle = ''
+	- var pageHead = ''
+	- var dir = ''
+	- var layout = ''
+
+<!DOCTYPE html>
+html(lang="ru")
+
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title= pageTitle
+		
+		block links
+
+		include favicons/favicon.html
+		
+		block styles
+			link(rel='stylesheet', href= dir + 'css/style.min.css')
+
+	body(class=bodyClass)
+		block content
+
+		block prescripts
+		script(src="js/script.min.js")
+		
+		block scripts
