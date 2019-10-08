@@ -5,10 +5,17 @@ body {
 
 * {
   box-sizing: border-box;
-
 }
 
 .wrapper {
-  width: calc(100% - 80px);
+  width: calc(100% - 20px);
   margin: 0 auto;
+
+  @media (min-width: $md) {
+    width: calc(100% - 40px);
+  }
+
+  @media (min-width: $xl) {
+    width: calc(100% - 80px);
+  }
 }
