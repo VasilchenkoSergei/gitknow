@@ -2,18 +2,18 @@
   display: grid;
   grid-template-columns: 100%;
   
-  @media (min-width: $sm) {
+  @media (min-width: $lg) {
     grid-template-columns: 48% 48%;
     grid-column-gap: 20px;
     -ms-grid-column-gap: 20px;
   }
 
-  @media (min-width: $lg) {
+  @media (min-width: $xl) {
     grid-template-columns: 32% 32% 32%;
   }
 
-  @media (min-width: $xxl) {
-    grid-template-columns: 24% 24% 24% 24%;
-  }
+  // @media (min-width: $xxl) {
+  //   grid-template-columns: 24% 24% 24% 24%;
+  // }
 
 }

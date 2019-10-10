@@ -15,6 +15,10 @@
     padding-right: 10px;
     padding-bottom: 5px;
 
+    @media (min-width: $lg) {
+      width: 500px;
+    }
+
     &::placeholder {
       color: $black;
       opacity: 0.7;

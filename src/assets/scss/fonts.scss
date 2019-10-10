@@ -1,20 +1,20 @@
 @font-face {
-  font-family: 'CeraCY';
-  src: local('☞Cera CY Bold'), local('CeraCY-Bold'),
-      url('../fonts/CeraCY-Bold.woff2') format('woff2'),
-      url('../fonts/CeraCY-Bold.woff') format('woff'),
-      url('../fonts/CeraCY-Bold.ttf') format('truetype');
+  font-family: 'OpenSans';
+  src: local('OpenSans Bold'), local('OpenSans-Bold'),
+      url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans-Bold.woff') format('woff'),
+      url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'CeraCY';
-  src: local('☞Cera CY Regular'), local('CeraCY-Regular'),
-      url('../fonts/CeraCY-Regular.woff2') format('woff2'),
-      url('../fonts/CeraCY-Regular.woff') format('woff'),
-      url('../fonts/CeraCY-Regular.ttf') format('truetype');
+  font-family: 'OpenSans';
+  src: local('OpenSans Regular'), local('OpenSans-Regular'),
+      url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff'),
+      url('../fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
