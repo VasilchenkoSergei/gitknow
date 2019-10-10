@@ -98,6 +98,10 @@ body {
   line-height: 30px;
 }
 
+.main-card__body p.hide {
+  display: none;
+}
+
 .main-card__body p,
 .main-card__body ul li {
   word-break: break-word;

@@ -1,31 +1,33 @@
 const searchInput = document.querySelector('#search-input');
 
 searchInput.addEventListener('input', () => {
-
+  let val = searchInput.value.trim();
+  console.log(val);
   
+
+  let texts = document.querySelectorAll('.main-card__body p');
+  if (val != '') {
+    texts.forEach(elem => {
+      if (elem.innerText.search(val) == -1) {
+        elem.classList.add('hide');
+        elem.innerHTML = elem.innerText
+      } else {
+        elem.classList.remove('hide');
+        let str = elem.innerText;
+        elem.innerHTML = insertMask(str, elem.innerText.search(val), val.length)
+        console.log(elem.innerHTML);
+        
+      }
+    });
+  } else {
+    texts.forEach(elem => {
+      elem.classList.remove('hide');
+      elem.innerHTML = elem.innerText
+    })
+  }
+
+  function insertMask(string, pos, len) {
+    return string.slice(0, pos) + '<mark>' + string.slice(pos, pos + len) + '<mark>' + string.slice(pos + len);
+  }
   
-    var lastResFind=""; // последний удачный результат
-    var copy_page=""; // копия страницы в ихсодном виде
-    function TrimStr(s) {
-        s = s.replace( /^\s+/g, '');
-      return s.replace( /\s+$/g, '');
-    }
-    function FindOnPage(searchInput) {//ищет текст на странице, в параметр передается ID поля для ввода
-      var obj = window.document.getElementById(searchInput);
-      var textToFind;
-      
-      if (obj) {
-        textToFind = TrimStr(obj.value);//обрезаем пробелы
-      } 
-
-      
-      if(document.body.innerHTML.indexOf(textToFind)=="-1")
-      alert("Ничего не найдено, проверьте правильность ввода!");
-      
-      if(copy_page.length > 0) {
-        document.body.innerHTML = copy_page
-      } else { copy_page = document.body.innerHTML }
-    }
-
-    FindOnPage('search-input')
-});
+})

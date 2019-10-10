@@ -46,6 +46,10 @@
     display: none;
     line-height: 30px;
 
+    & p.hide {
+      display: none;
+    }
+
     @media (min-width: $lg) {
       display: block;
     }
