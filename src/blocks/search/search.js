@@ -19,7 +19,7 @@ searchInput.addEventListener('input', () => {
   } else {
     texts.forEach(elem => {
       elem.closest('.main-card').classList.remove('hide');
-      elem.closest('.main-card').querySelector('.main-card__header').classList.add('active');
+      elem.closest('.main-card').querySelector('.main-card__header').classList.remove('active');
       elem.innerHTML = elem.innerText
     })
   }
