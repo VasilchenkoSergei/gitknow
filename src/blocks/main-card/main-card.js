@@ -4,7 +4,7 @@ const cardOpen = function() {
   
   mainCardHeaders.forEach(header => {
     header.addEventListener('click', (e) => {
-      const goToHeader = e.target.closest('div');
+      const goToHeader = e.target.closest('.main-card__header');
       mainCardHeaders.forEach(item => {
         item.closest('div').classList.remove('active');
       })
@@ -13,6 +13,7 @@ const cardOpen = function() {
         goToHeader.classList.remove('active');
       } else {
         goToHeader.classList.add('active');
+
       }
     });
   });
