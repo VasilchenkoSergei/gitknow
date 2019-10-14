@@ -1,6 +1,7 @@
 .cards-list {
   display: grid;
   grid-template-columns: 100%;
+  padding-bottom: 100px;
   
   @media (min-width: $lg) {
     grid-template-columns: 48% 48%;
@@ -11,9 +12,4 @@
   @media (min-width: $xl) {
     grid-template-columns: 32% 32% 32%;
   }
-
-  // @media (min-width: $xxl) {
-  //   grid-template-columns: 24% 24% 24% 24%;
-  // }
-
 }

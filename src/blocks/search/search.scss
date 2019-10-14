@@ -24,4 +24,12 @@
       opacity: 0.7;
     }
   }
+
+  & .modal {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }
