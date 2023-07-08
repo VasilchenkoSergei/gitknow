@@ -55,7 +55,7 @@
     "mocha-eslint": "^5.0.0",
     "postcss-object-fit-images": "^1.1.2",
     "prettier": "^1.16.4",
-    "stylelint": "^9.10.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-prettier": "^5.0.0",
     "stylelint-prettier": "^1.0.6",
     "svgo": "^1.2.0",
